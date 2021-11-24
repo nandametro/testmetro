@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('maven install') {
       steps {
-        tool 'maven3.8.4'
+        sh 'apt install maven'
       }
     }
 
@@ -16,7 +16,7 @@ pipeline {
       steps {
         sh '''cd /home/nandakumar/PoC_TrainSim/serenityscreenplayrestassured;
 
-mvn verify'''
+/usr/share/mvn verify'''
       }
     }
 
