@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh '''cd /home/nandakumar/PoC_TrainSim/serenityscreenplayrestassured;
 
-/usr/share/mvn verify'''
+/usr/share/maven/bin/mvn verify'''
       }
     }
 
