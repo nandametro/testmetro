@@ -6,12 +6,6 @@ pipeline {
 
   }
   stages {
-    stage('maven install') {
-      steps {
-        sh 'apt install maven'
-      }
-    }
-
     stage('maven verify') {
       steps {
         sh '''cd /home/nandakumar/PoC_TrainSim/serenityscreenplayrestassured;
