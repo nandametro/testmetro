@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('maven verify') {
       steps {
-        sh '''cd /var/tmp/PoC_TrainSim/serenityscreenplayrestassured;
+        sh '''cd /var/tmp/RSG_1.5_SystemTesting/serenityscreenplayrestassured;
 
 /usr/share/maven/bin/mvn verify'''
       }
